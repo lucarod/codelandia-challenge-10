@@ -7,12 +7,6 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
 `
 
-export const Logo = styled.a`
-  font-size: 24px;
-  color: ${({ theme }) => theme.colors.primary};
-  cursor: pointer;
-`
-
 export const Nav = styled.nav`
   display: flex;
   align-items: center;

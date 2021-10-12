@@ -1,9 +1,10 @@
-import { StyledHeader, Logo, Nav, HeaderButton } from './style'
+import Logo from '../../Atoms/Logo'
+import { StyledHeader, Nav, HeaderButton } from './style'
 
 const Header = () => {
   return (
     <StyledHeader>
-      <Logo>Naped</Logo>
+      <Logo />
       <Nav>
         <a className='active'>Home</a>
         <a>Séries</a>

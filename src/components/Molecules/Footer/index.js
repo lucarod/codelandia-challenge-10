@@ -1,8 +1,12 @@
+import Logo from '../../Atoms/Logo'
+import { StyledFooter } from "./style"
+
 const Footer = () => {
   return (
-    <footer>
-
-    </footer>
+    <StyledFooter>
+      <Logo>Naped</Logo>
+      <p>Todas as imagens, séries e etc são marcas registradas dos seus respectivos proprietários </p>
+    </StyledFooter>
   )
 }
 
