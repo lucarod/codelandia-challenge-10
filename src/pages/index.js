@@ -7,10 +7,12 @@ export default function Home() {
       <Head title='Homepage' />
 
       <main>
-        {/* <PageTitle
-          title="Mundo nerd? <br> Naped!"
-          subtitle="O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados"
-        /> */}
+        <PageTitle maxWidth='492px'>
+          <h1>Mundo Nerd? <br/> Naped!</h1>
+          <h2>
+            O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados
+          </h2>
+        </PageTitle>
       </main>
     </div>
   )
