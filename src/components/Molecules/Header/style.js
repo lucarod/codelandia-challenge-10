@@ -44,7 +44,7 @@ export const Nav = styled.nav`
   }
 `
 
-export const HeaderButton = styled.button`
+export const HeaderButton = styled.a`
   margin-left: 44px;
   padding: 5px 20px;
   font-family: ${({ theme }) => theme.fonts.lexendDeca};
