@@ -18,7 +18,8 @@ export default function Home() {
         <Link href='#' name='Lorem' variant='mediumTag' />
         <Link href='#' name='Lorem' variant='largeTag' />
         <Link href='#' name='Lorem' variant='postTag' />
-        <Link href='#' name='Lorem' variant='primary' />
+        <Link href='#' name='Ler Notícia' variant='primaryButton' />
+        <Link href='#' name='Lorem' variant='largeButton' />
       </main>
     </div>
   )
