@@ -1,17 +1,30 @@
+import NextLink from 'next/link'
 import Logo from '../../Atoms/Logo'
-import { StyledHeader, Nav, HeaderButton } from './style'
+import { StyledHeader, Nav, NavLink, HeaderButton } from './style'
 
 const Header = () => {
   return (
     <StyledHeader>
       <Logo />
       <Nav>
-        <a className='active'>Home</a>
-        <a>Séries</a>
-        <a>Filmes</a>
-        <a>Animes</a>
-        <a>Games</a>
-        <HeaderButton>Minha conta</HeaderButton>
+        <NextLink href="#" passHref>
+          <NavLink className='active'>Home</NavLink>
+        </NextLink>
+        <NextLink href="#" passHref>
+          <NavLink active>Séries</NavLink>
+        </NextLink>
+        <NextLink href="#" passHref>
+          <NavLink active>Filmes</NavLink>
+        </NextLink>
+        <NextLink href="#" passHref>
+          <NavLink active>Animes</NavLink>
+        </NextLink>
+        <NextLink href="#" passHref>
+          <NavLink active>Games</NavLink>
+        </NextLink>
+        <NextLink href="#" passHref>
+          <HeaderButton>Minha conta</HeaderButton>
+        </NextLink>
       </Nav>
     </StyledHeader>
   )
