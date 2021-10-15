@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
 
-import { css } from 'styled-components'
-
 import Link from '../../Atoms/Link'
+import Typography from '../../Atoms/Typography'
 
+
+import { css } from 'styled-components'
 import { StyledCard } from './style'
 
 export const variantStyles = {
@@ -27,12 +28,21 @@ export const variantStyles = {
       width: 761px;
       height: 350px;
     `,
+    fontStyle: css`
+      font-family: ${({theme}) => theme.fonts.lexendDeca};
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 400;
+      color: ${({theme}) => theme.colors.textWhite};
+      inset: auto 30px 15px 30px;
+    `,
     linkVariant: 'highlightCardTag'
   }
 }
 
 const Card = ({ variant, title, imageUrl, category, href = '#', ...props }) => {
   const variantStyle = variantStyles[variant]
+  const typographyVariant = variant != 'highlightCard__big' ? 'smallTitle' : 'default'
 
   return (
     <NextLink href={href}>
@@ -45,7 +55,7 @@ const Card = ({ variant, title, imageUrl, category, href = '#', ...props }) => {
         />
         <div className="card__gradient"></div>
         <Link href='#categoria' name={category} variant={variantStyle.linkVariant} />
-        <h3>{title}</h3>
+        <Typography tag='h3' variant={typographyVariant}>{title}</Typography>
       </StyledCard>
     </NextLink>
   )

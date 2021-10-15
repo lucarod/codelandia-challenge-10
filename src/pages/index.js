@@ -14,13 +14,13 @@ export default function Home() {
 
       <main>
         <PageTitle maxWidth='492px'>
-          <Typography tag='h1' variant='title'>Mundo Nerd? <br /> Naped!</Typography>
-          <Typography tag='h2' variant='subtitle'>
+          <Typography tag='h1' variant='largeTitle'>Mundo Nerd? <br /> Naped!</Typography>
+          <Typography tag='h2' variant='largeSubtitle'>
             O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados
           </Typography>
         </PageTitle>
         <Card
-          variant='highlightCard__small'
+          variant='defaultCard'
           title={title}
           category={category}
           imageUrl={imageUrl}

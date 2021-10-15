@@ -33,15 +33,7 @@ export const StyledCard = styled.article`
   }
 
   & > h3 {
-    bottom: 10px;
-    left: 15px;
-    right: 20px;
-
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 400;
-    font-family: ${({ theme }) => theme.fonts.lexendDeca};
-    color: ${({ theme }) => theme.colors.textWhite};
+    ${({variant}) => variant == 'highlightCard__big' ? variantStyles[variant].fontStyle : 'inset: auto 20px 10px 15px;'}
   }
 
 `
