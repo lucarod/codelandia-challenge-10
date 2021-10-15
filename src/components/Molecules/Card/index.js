@@ -29,18 +29,18 @@ export const variantStyles = {
       height: 350px;
     `,
     fontStyle: css`
-      font-family: ${({theme}) => theme.fonts.lexendDeca};
+      font-family: ${({ theme }) => theme.fonts.lexendDeca};
       font-size: 24px;
       line-height: 34px;
       font-weight: 400;
-      color: ${({theme}) => theme.colors.textWhite};
+      color: ${({ theme }) => theme.colors.textWhite};
       inset: auto 30px 15px 30px;
     `,
     linkVariant: 'highlightCardTag'
   }
 }
 
-const Card = ({ variant, title, imageUrl, category, href = '#', ...props }) => {
+const Card = ({ variant, title, imageUrl, category, href, ...props }) => {
   const variantStyle = variantStyles[variant]
   const typographyVariant = variant != 'highlightCard__big' ? 'smallTitle' : 'default'
 

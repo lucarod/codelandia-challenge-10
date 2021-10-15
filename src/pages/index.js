@@ -1,7 +1,7 @@
 import Head from '../components/Atoms/Head'
 import PageTitle from '../components/Atoms/PageTitle'
 import Typography from '../components/Atoms/Typography'
-import Card from '../components/Molecules/Card'
+import Highlights from '../components/Organisms/Highlights'
 
 export default function Home() {
   const title = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus, malesuada et velit in, blandit molestie dolor.'
@@ -19,8 +19,7 @@ export default function Home() {
             O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos relacionados
           </Typography>
         </PageTitle>
-        <Card
-          variant='defaultCard'
+        <Highlights
           title={title}
           category={category}
           imageUrl={imageUrl}
