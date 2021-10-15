@@ -15,11 +15,11 @@ const variantStyles = (variant) =>
     padding: 1px 14px;
     font-size: 10px;
   `,
-  mediumTag: css`
+  defaultCardTag: css`
     padding: 2px 16px;
     font-size: 12px;
   `,
-  largeTag: css`
+  highlightCardTag: css`
     padding: 4px 18px;
     font-size: 14px;
   `,
@@ -35,9 +35,17 @@ export const StyledLink = styled.a`
   border-radius: 3px;
   font-family: ${({ theme }) => theme.fonts.lexendDeca};
   color: ${({ theme }) => theme.colors.textWhite};
-  transition: all 0.3s;
+  transition: filter 0.3s ease;
   cursor: pointer;
   text-decoration: none;
-  ${({ variant }) => variantStyles(variant)}
+  ${({ variant }) => variantStyles(variant)};
+
+  &:hover {
+    filter: brightness(1.25);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 
 `;
