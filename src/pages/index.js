@@ -1,6 +1,7 @@
 import Head from '../components/Atoms/Head'
 import PageTitle from '../components/Atoms/PageTitle'
 import Typography from '../components/Atoms/Typography'
+// import Flex from '../components/Atoms/Flex'
 import Highlights from '../components/Organisms/Highlights'
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
   const imageUrl = 'vidas-ao-vento-naoko.jpg'
 
   return (
-    <div>
+    <>
       <Head title='Homepage' />
 
       <main>
@@ -25,6 +26,6 @@ export default function Home() {
           imageUrl={imageUrl}
         />
       </main>
-    </div>
+    </>
   )
 }
