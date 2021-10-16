@@ -7,4 +7,8 @@ export const StyledHighlights = styled.section`
   & > article {
     margin-right: 20px;
   }
+
+  & > div > article:first-child {
+    margin-bottom: 20px;
+  }
 `

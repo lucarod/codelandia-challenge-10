@@ -5,6 +5,7 @@ export const StyledFooter = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 
   & > p {
     max-width: 500px;

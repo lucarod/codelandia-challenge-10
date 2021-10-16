@@ -6,7 +6,7 @@ import Highlights from '../components/Organisms/Highlights'
 export default function Home() {
   const title = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros tellus, malesuada et velit in, blandit molestie dolor.'
   const category = 'Lorem'
-  const imageUrl = 'Vidas-ao-Vento-Naoko.jpg'
+  const imageUrl = 'vidas-ao-vento-naoko.jpg'
 
   return (
     <div>
