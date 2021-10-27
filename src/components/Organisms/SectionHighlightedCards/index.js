@@ -1,7 +1,7 @@
 import { StyledHighlights } from './style'
 import Card from '../../Molecules/Card'
 
-const Highlights = ({ title, imageUrl, category, href = '#', ...props }) => {
+const SectionHighlightedCards = ({ title, imageUrl, category, href = '#', ...props }) => {
   return (
     <StyledHighlights>
       <Card
@@ -31,4 +31,4 @@ const Highlights = ({ title, imageUrl, category, href = '#', ...props }) => {
   )
 }
 
-export default Highlights
+export default SectionHighlightedCards

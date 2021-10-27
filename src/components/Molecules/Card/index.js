@@ -40,9 +40,9 @@ export const variantStyles = {
   }
 }
 
-const Card = ({ variant, title, imageUrl, category, href, ...props }) => {
+const Card = ({ variant = 'defaultCard', title, imageUrl, category, href, ...props }) => {
   const variantStyle = variantStyles[variant]
-  const typographyVariant = variant != 'highlightCard__big' ? 'smallTitle' : 'default'
+  const typographyVariant = variant == 'highlightCard__big' ? 'default' : 'smallTitle'
 
   return (
     <NextLink href={href}>

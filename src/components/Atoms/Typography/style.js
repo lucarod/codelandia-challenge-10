@@ -36,5 +36,14 @@ export const variantStyles = {
     font-size: 11px;
     line-height: 16px;
     color: ${({ theme }) => theme.colors.textGrey};
+  `,
+  sectionCardsTitle: styled(Main)`
+    display: inline-block;
+    font-family: ${({ theme }) => theme.fonts.lexendDeca};
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 3px solid;
+    border-bottom-color: ${({ theme }) => theme.colors.primary};
+    padding-bottom: 13px;
   `
 };
